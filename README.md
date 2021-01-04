@@ -62,27 +62,7 @@ osmium cat germany-latest.opl -o germany-latest.osm.pbf
 
 ## #5 Modifing the costing function in valhalla
 
-All modifications happen in the `autocost.cc` file.
-
-As things get rather complicated if we would integrate penalties we simply turn them all to 0:
-
-```
-constexpr float kDefaultDestinationOnlyPenalty = 0.0f; // Seconds
-constexpr float kDefaultManeuverPenalty = 0.0f;          // Seconds
-constexpr float kDefaultAlleyPenalty = 0.0f;             // Seconds
-constexpr float kDefaultGateCost = 0.0f;                // Seconds
-constexpr float kDefaultGatePenalty = 0.0f;            // Seconds
-constexpr float kDefaultTollBoothCost = 0.0f;           // Seconds
-constexpr float kDefaultTollBoothPenalty = 0.0f;         // Seconds
-constexpr float kDefaultFerryCost = 0.0f;              // Seconds
-constexpr float kDefaultRailFerryCost = 0.0f;          // Seconds
-constexpr float kDefaultCountryCrossingCost = 0.0f;    // Seconds
-constexpr float kDefaultCountryCrossingPenalty = 0.0f;   // Seconds
-```
-
-TODO: Develop a model to integrate penalties for intersections etc.
-
-We don't want to favour certain roads in our model, but obviously depending on your goal you could favour roads with less CO2 output (>=50kmh / <=80km)
+We had to modify valhalla in several files due to hard coded parameters. We create a branch on a fork for our changes, see here: https://github.com/sebastian-meier/valhalla/tree/co2 
 
 ## #6 build valhalla
 
