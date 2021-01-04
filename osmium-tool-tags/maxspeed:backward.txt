@@ -1,0 +1,8 @@
+151	"maxspeed:backward"	"RU:urban"
+113	"maxspeed:backward"	"RU:rural"
+20	"maxspeed:backward"	"DE:urban"
+16	"maxspeed:backward"	"AT:rural"
+13	"maxspeed:backward"	"UA:rural"
+12	"maxspeed:backward"	"DE:rural"
+9	"maxspeed:backward"	"IT:urban"
+6	"maxspeed:backward"	"RO:trunk"

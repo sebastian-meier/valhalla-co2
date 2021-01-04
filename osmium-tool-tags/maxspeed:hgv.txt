@@ -1,0 +1,2 @@
+146	"maxspeed:hgv"	"RO:motorway"
+3	"maxspeed:hgv"	"RU:urban"

@@ -1,0 +1,7 @@
+169	"maxspeed:forward"	"RU:urban"
+95	"maxspeed:forward"	"RU:rural"
+17	"maxspeed:forward"	"DE:urban"
+16	"maxspeed:forward"	"DE:rural"
+14	"maxspeed:forward"	"AT:rural"
+9	"maxspeed:forward"	"UA:urban"
+8	"maxspeed:forward"	"IT:urban"
